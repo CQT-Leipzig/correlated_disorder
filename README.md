@@ -58,19 +58,19 @@ brief manual gives a rough idea of the steps
     1. each call to generate a correlated disorder yields two independent
        disordered lattices.  Predefine lattices
          ```
-            std::vector<double> lattice1(disorder.N,0.0);
-            std::vector<double> lattice2(disorder.N,0.0);
+         std::vector<double> lattice1(disorder.N,0.0);
+         std::vector<double> lattice2(disorder.N,0.0);
          ```
          And generated them
          ```
-            myDisorder.generate_correlated_continuous(lattice1, lattice2, seed);
+         myDisorder.generate_correlated_continuous(lattice1, lattice2, seed);
          ```
 
 1.  Steps to generate discrete lattices with p=density of non-defect sites:
     1. Repeat 1)
     1. Be aware that sigma2=C(0) and call
          ```
-            discretize( lattice1, calc_theta_global(p,sigma2) );
+         discretize( lattice1, calc_theta_global(p,sigma2) );
          ```
          The lattice1 now holds the discretized lattice
 
