@@ -14,7 +14,7 @@ deviations.
 Authors: Johannes Zierenberg, Niklas Fricke, Martin Marenz, F. Paul Spitzner,
 Viktoria Blavatska and Wolfhard Janke
 
-If you use parts of this code please cite Refs.[1,2].
+If you use parts of this code please cite [1].
 
 ## Requirements
 - C++11 compatible compiler (tested with GNU compiler)
@@ -97,7 +97,7 @@ make
 ## File description
 
 ### fft_nr.h
-Discrete Fast Fourier Transform (FFT) as described in  Numerical Recipies [2].
+This file is not included due to license problems. The user should add the Discrete Fast Fourier Transform (FFT) as described in  Numerical Recipies [2].
 
 ### correlated_disorder_continuous.hpp
 All functions needed to generated continuous variables on a hypercubic lattice
