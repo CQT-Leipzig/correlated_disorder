@@ -22,7 +22,8 @@
 #include <random>
 #include <functional>
 #include <algorithm>
-#include "fft_nr.h"
+//#include "fft_nr.h"
+#include "FourierTransfromWrapper.hpp"
 
 /**
  * Class to generated long-range correlated disorder
@@ -220,7 +221,7 @@ class Disorder{
     std::cout << "... iFFT and normalization into real number arrays\n";
 #endif
 
-    fourn<double>(complex_lattice, fft_nn, -1);
+    fourn(complex_lattice, fft_nn, -1);
 
     /// normalize the IFFT and assign to lattices
     for (unsigned i = 0; i < N; i++) {
@@ -356,7 +357,7 @@ class Disorder{
     for (unsigned i = 0; i < N; i++) {
       Sk[2 * i] = Cx[i];
     }
-    fourn<double>(Sk, fft_nn, 1);
+    fourn(Sk, fft_nn, 1);
 
     // check for negative Sk values and imaginary contributions
     if (error_message) {
