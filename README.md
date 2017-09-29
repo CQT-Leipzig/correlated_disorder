@@ -17,10 +17,10 @@ Viktoria Blavatska and Wolfhard Janke
 If you use parts of this code please cite [1].
 
 ## Requirements
-- C++11 compatible compiler (tested with GNU compiler)
+- C++11 compatible compiler (tested with GNU gcc)
+- FFTW3 installed (e.g. on debian 'sudo apt-get install libfftw3 libfftw3-dev')
 
 ## Usage
-
 The header-only functions need to be included in a c++ program. The following
 brief manual gives a rough idea of the steps 
 
@@ -96,8 +96,8 @@ make
 
 ## File description
 
-### fft_nr.h
-This file is not included due to license problems. The user should add the Discrete Fast Fourier Transform (FFT) as described in  Numerical Recipies [2].
+### FourierTransfromWrapper.hpp
+Wrapper arround fftw.
 
 ### correlated_disorder_continuous.hpp
 All functions needed to generated continuous variables on a hypercubic lattice
