@@ -15,16 +15,6 @@ all: $(PLT_PDF) $(PLT_EPS) fig_ColoredSequence_l11a05p-1s1_small.pdf
 
 FORCE:
 
-fig_ColoredSequence_l11a05p-1s1_small.pdf: fig_ColoredSequence_l11a05p-1s1.pdf
-	gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7\
-		-dDownsampleColorImages=true\
-		-dDownsampleGrayImages=true\
-		-dDownsampleMonoImages=true\
-		-dColorImageResolution=240\
-		-dGrayImageResolution=240\
-		-dMonoImageResolution=240\
-		-sOutputFile=fig_ColoredSequence_l11a05p-1s1_small.pdf fig_ColoredSequence_l11a05p-1s1.pdf
-
 %.pdf: %.ps
 	ps2pdf $<
 
