@@ -1,5 +1,5 @@
 set terminal epslatex standalone size 4.5cm,4.0cm color solid
-set output "fig_snapshot_continous.tex"
+set output "fig_snapshot_continuous.tex"
 
 
 set pm3d map
