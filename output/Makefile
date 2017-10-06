@@ -8,8 +8,7 @@ PLT_EPS := $(PLT_FILES:%.plt=%.eps)
 LATEX = latex #-interaction=nonstopmode -file-line-error
 DEL = rm
 
-all: $(PLT_PDF) $(PLT_EPS) fig_ColoredSequence_l11a05p-1s1_small.pdf
-
+all: $(PLT_PDF) $(PLT_EPS)
 .PHONY: clean
 
 
