@@ -117,7 +117,7 @@ Example test program which produces the same files as provided in
 [1] J. Zierenberg, N. Fricke, M. Marenz, F.P. Spitzner, V. Blavatska, and W. Janke,
     "Percolation thresholds and fractal dimensions for square and cubic lattices
     with long-range correlated defects",
-    submitted (2017).
+    Phys. Rev. E 96, 062125 (2017). 
     
 [2] W. H. Press, S. A. Teukolsky, W. T. Vetterling, and B. P.  Flannery,
     Numerical Recipes 3rd edition: The Art of Scientific Computing 
