@@ -1,13 +1,11 @@
 /*
  * =====================================================================================
  *
- *       Filename:  example_generate_configuration.cpp
+ *       Filename:  example_1D_correlation.cpp
  *
- *    Description:  Example program that generates a lattice in two dimension
+ *    Description:  Example program that generates many lattices in one dimension
  *                  with long-range correlated continuous variables according to
- *                  different correlation functions. 
- *                  Afterwards these are mapped to discrete variables to produce
- *                  a desired density.
+ *                  different correlation functions and measures it.
  *
  *        Created:  04/18/2017
  *
